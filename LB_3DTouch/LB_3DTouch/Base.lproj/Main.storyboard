@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2OZ-e5-FdU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--3D Touch-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJe-c0-vRp">
+                                <rect key="frame" x="113" y="119" width="94" height="30"/>
+                                <state key="normal" title="Peek and Pop"/>
+                                <connections>
+                                    <segue destination="q8E-iB-2yG" kind="push" id="G5N-MM-hQI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wJe-c0-vRp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YoD-lW-4DG"/>
+                            <constraint firstItem="wJe-c0-vRp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="b3W-KE-JJW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="3D Touch" id="ckH-GS-jgV"/>
+                    <connections>
+                        <outlet property="preBt" destination="wJe-c0-vRp" id="1qQ-z5-gyX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.5333333333333" y="337.95999999999998"/>
+        </scene>
+        <!--3D Touch-->
+        <scene sceneID="ELG-bh-gVU">
+            <objects>
+                <viewController storyboardIdentifier="PreViewController" id="q8E-iB-2yG" customClass="PreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sCA-zW-Zpg"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBC-yG-E0H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GL7-wx-VC8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-NL-7fK">
+                                <rect key="frame" x="-4" y="173" width="328" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="86Z-VL-zFR"/>
+                                    <constraint firstAttribute="width" constant="328" id="bf2-sL-rRh"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89687894570707072" green="0.80239804908396695" blue="0.27544082201627312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MBu-NL-7fK" firstAttribute="centerX" secondItem="GL7-wx-VC8" secondAttribute="centerX" id="K7O-XG-UB6"/>
+                            <constraint firstItem="MBu-NL-7fK" firstAttribute="centerY" secondItem="GL7-wx-VC8" secondAttribute="centerY" id="hN5-Oq-SdY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="3D Touch" id="oI7-kd-FmE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PML-jo-NzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="337.95999999999998"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0ZW-DE-04J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2OZ-e5-FdU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Utm-Jo-LGI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qxe-mE-sUA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUh-4H-jmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.46666666666667" y="337.95999999999998"/>
+        </scene>
+    </scenes>
+</document>
